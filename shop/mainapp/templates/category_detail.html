@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<nav aria-label="breadcrumb" class="mt-4" style="margin-left: 155px;">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{% url 'base' %}">Главная</a></li>
+    <li class="breadcrumb-item"><a href="#">{{ category.name }}</a></li>
+  </ol>
+</nav>
+
+{{ category.name }}
+
+{% endblock content %}
